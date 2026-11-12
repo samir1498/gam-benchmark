@@ -1,5 +1,14 @@
 # Benchmark: NestJS vs Spring Boot vs Go
 
+> **After the repo split:** this harness was imported from the old polyglot
+> monorepo and still assumes local `backend-*` directories and the root compose
+> file. Target design is image-based (pull `ghcr.io/samir1498/gam-backend-*` by
+> tag, `--cpus`/`--memory` limits, same k6 scenarios). Tracked as T12 in
+> `gam-repo-topology-and-learning-arc`. Until it lands, `bun run bench run` fails
+> at the compose step; `bun run ci` passes.
+>
+> `results/` keeps the historical numbers from the monorepo unchanged.
+
 ## Prerequisites
 
 - Docker Compose v2
